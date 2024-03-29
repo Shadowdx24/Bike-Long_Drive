@@ -21,12 +21,14 @@ public class RoadGarage : MonoBehaviour
 
     public void NextRoad()
     {
+        AudioManager.instance.Play("BtnClick");
         roadIndex++;
         ShowRoad(roadIndex);
     }
 
     public void PrevRoad() 
-    { 
+    {
+        AudioManager.instance.Play("BtnClick");
         roadIndex--;
         ShowRoad(roadIndex);
     }
